@@ -10,10 +10,11 @@ const players = [
     {id: 9, name: 'Periklis Korkontzelos', title: 'Associate Data Scientist', interest: 'High'},
     {id: 10, name: 'Jan Riccius', title: 'Trading Services Trainee', interest: 'High'},
     {id: 11, name: 'Alex Walker', title: 'Business Analyst', interest: 'High'},
-    {id: 12, name: 'Eren Eraslan', title: 'MTF Analyst', interest: 'Medium'},
-    {id: 13, name: 'Romans Markuns', title: 'Developer', interest: 'Medium'},
-    {id: 14, name: 'Vivek Rughani', title: 'Product Owner - Marketing Technology', interest: 'Medium'},
-    {id: 15, name: 'David Mitchell', title: 'Developer', interest: 'Low'}
+    {id: 12, name: 'Yohan Kariyawasan', title: 'Sales Trader', interest: 'High'},
+    {id: 13, name: 'Eren Eraslan', title: 'MTF Analyst', interest: 'Medium'},
+    {id: 14, name: 'Romans Markuns', title: 'Developer', interest: 'Medium'},
+    {id: 15, name: 'Vivek Rughani', title: 'Product Owner - Marketing Technology', interest: 'Medium'},
+    {id: 16, name: 'David Mitchell', title: 'Developer', interest: 'Low'}
 ];
 
 export {players};

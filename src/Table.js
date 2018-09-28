@@ -75,7 +75,7 @@ class Table extends Component {
                 rowsCount={this.state.rows.length}
                 onGridSort={this.handleGridSort}
                 onGridRowsUpdated={this.handleGridRowsUpdated}
-                minHeight={562 /* +35 */}
+                minHeight={597 /* +35 */}
             />
         );
     }
