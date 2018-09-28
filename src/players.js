@@ -11,6 +11,7 @@ const players = [
     {id: 10, name: 'Jan Riccius', title: 'Trading Services Trainee', interest: 'High'},
     {id: 11, name: 'Alex Walker', title: 'Business Analyst', interest: 'High'},
     {id: 12, name: 'Yohan Kariyawasan', title: 'Sales Trader', interest: 'High'},
+    {id: 13, name: 'Jaime Díez', title: 'Trading Services Trainee', interest: 'High'},
     {id: 13, name: 'Eren Eraslan', title: 'MTF Analyst', interest: 'Medium'},
     {id: 14, name: 'Romans Markuns', title: 'Developer', interest: 'Medium'},
     {id: 15, name: 'Vivek Rughani', title: 'Product Owner - Marketing Technology', interest: 'Medium'},
