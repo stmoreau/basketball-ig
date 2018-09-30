@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDataGrid from 'react-data-grid';
 import {Data} from 'react-data-grid-addons';
-import {players} from './players'
+import {players} from './players';
 
 const columns = [
     {key: 'id', name: 'ID', width: 40},
