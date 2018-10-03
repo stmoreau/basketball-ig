@@ -11,7 +11,12 @@
     font-size: 1.5em;
 }
 
-.App-intro {
+.App-table {
     text-align: left;
     font-size: large;
+    margin-bottom: 20px;
+}
+
+.App-emails {
+    text-align: justify;
 }

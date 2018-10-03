@@ -6,6 +6,7 @@ import {players} from './players';
 const columns = [
     {key: 'id', name: 'ID', width: 40},
     {key: 'name', name: 'Name', editable: true},
+    {key: 'email', name: 'Email', editable: true},
     {key: 'title', name: 'Job Title', editable: true},
     {key: 'interest', name: 'Interest', editable: true}
 ].map(
