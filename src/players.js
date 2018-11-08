@@ -14,8 +14,7 @@ const players = [
     {id: 13, name: 'Jaime Díez', email: 'Jaime.Diez@ig.com', title: 'Trading Services Trainee', interest: 'High'},
     {id: 13, name: 'Eren Eraslan', email: 'eren.eraslan@ig.com', title: 'MTF Analyst', interest: 'Medium'},
     {id: 14, name: 'Romans Markuns', email: 'Romans.Markuns@ig.com', title: 'Developer', interest: 'Medium'},
-    {id: 15, name: 'Vivek Rughani', email: 'vivek.rughani@ig.com', title: 'Product Owner - Marketing Technology', interest: 'Medium'},
-    {id: 16, name: 'David Mitchell', email: 'David.Mitchell@ig.com', title: 'Developer', interest: 'Low'}
+    {id: 15, name: 'Vivek Rughani', email: 'vivek.rughani@ig.com', title: 'Product Owner - Marketing Technology', interest: 'Medium'}
 ];
 
 const emails = players.map((player) => (player.email));
