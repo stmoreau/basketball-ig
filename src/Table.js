@@ -8,7 +8,8 @@ const columns = [
     {key: 'name', name: 'Name', editable: true},
     {key: 'email', name: 'Email', editable: true},
     {key: 'title', name: 'Job Title', editable: true},
-    {key: 'interest', name: 'Interest', editable: true}
+    {key: 'interest', name: 'Interest', editable: true},
+    {key: 'givenDate', name: 'Given Available Date', editable: true},
 ].map(
     column => ({
         ...column,
