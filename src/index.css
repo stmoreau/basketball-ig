@@ -6,7 +6,7 @@ nav img {
     height: 64px;
 }
 
-.arrow:hover {
+a:hover {
     text-decoration: underline;
 }
 
