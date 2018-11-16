@@ -70,7 +70,7 @@ const players = [{
     },
     {
         id: 8,
-        name: 'Thomas Rogers',
+        name: 'Tom Rogers',
         email: 'Tom.Rogers@ig.com',
         title: 'Trading Services Trainee',
         interest: 'High',
