@@ -5,12 +5,11 @@ import {players} from './players';
 
 const columns = [
     {key: 'id', name: 'ID', width: 40},
-    {key: 'name', name: 'Name', editable: true},
-    {key: 'email', name: 'Email', editable: true},
-    {key: 'title', name: 'Job Title', editable: true},
-    {key: 'interest', name: 'Interest', editable: true},
-    {key: 'givenDate', name: 'Given Available Date', editable: true},
-    {key: 'accepted', name: 'Accepted 1st game', editable: true},
+    {key: 'name', name: 'Name'},
+    {key: 'email', name: 'Email'},
+    {key: 'title', name: 'Job Title'},
+    {key: 'interest', name: 'Interest'},
+    {key: 'accepted', name: 'Coming the 29th Nov'},
 ].map(
     column => ({
         ...column,
