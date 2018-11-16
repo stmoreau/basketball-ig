@@ -10,6 +10,7 @@ const columns = [
     {key: 'title', name: 'Job Title', editable: true},
     {key: 'interest', name: 'Interest', editable: true},
     {key: 'givenDate', name: 'Given Available Date', editable: true},
+    {key: 'accepted', name: 'Accepted 1st game', editable: true},
 ].map(
     column => ({
         ...column,
