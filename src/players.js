@@ -17,6 +17,4 @@ const players = [
     {id: 16, name: 'Vivek Rughani', email: 'vivek.rughani@ig.com', title: 'Product Owner - Marketing Technology', interest: 'Medium', accepted: 'no'}
 ];
 
-const urlNames = players.map((player) => (player.email.toLowerCase().replace('@ig.com','')));
-
-export {players, urlNames};
+export {players};

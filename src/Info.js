@@ -1,16 +1,17 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import PlayerComponent from './PlayerComponent';
-import {players, urlNames} from './players';
+import {players} from './players';
 
 
 function Info({ match }) {
   const player = returnPlayer(players, window.location.href.substr(window.location.href.lastIndexOf('/') + 1));
+  const playerUrl = players.map((player) => (player.email.toLowerCase().replace('@ig.com','')));
   return (
     <div className="Info">
         <h1>People's Info</h1>
         <ul>
-          {urlNames.map((data, i) => (<li key={i}><Link to={'/info/' + data}>{players[i].name}</Link></li>))}
+          {playerUrl.map((data, i) => (<li key={i}><Link to={'/info/' + data}>{players[i].name}</Link></li>))}
         </ul>
 
         <Route path={`${match.path}/:urlName`} render={() => <PlayerComponent ha="1" player={player} />} />

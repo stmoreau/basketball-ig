@@ -1,16 +1,89 @@
-import React, { Component } from 'react';
-import Table from './Table';
+import React, {Component} from 'react';
+import ReactDataGrid from 'react-data-grid';
+import {Data} from 'react-data-grid-addons';
+import {players} from './players';
+
+const columns = [
+    {key: 'id', name: 'ID', width: 40},
+    {key: 'name', name: 'Name'},
+    {key: 'accepted', name: 'Coming the 29th Nov'}
+].map(
+    column => ({
+        ...column,
+        sortable: true
+    })
+);
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-table">
-            <Table/>
-        </div>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+
+        const originalRows = players;
+        this.state = {
+            rows: originalRows,
+            originalRows
+        };
+
+        this.rowGetter = this.rowGetter.bind(this);
+        this.getRows = this.getRows.bind(this);
+        this.handleGridSort = this.handleGridSort.bind(this);
+        this.handleGridRowsUpdated = this.handleGridRowsUpdated.bind(this);
+    }
+
+    handleGridSort(sortColumn, sortDirection) {
+        const comparator = (a, b) => {
+            if (sortDirection === 'ASC') {
+                return (a[sortColumn] > b[sortColumn]) ? 1 : -1;
+            } else if (sortDirection === 'DESC') {
+                return (a[sortColumn] < b[sortColumn]) ? 1 : -1;
+            }
+        };
+
+        const rows = sortDirection === 'NONE' ? this.state.originalRows : this.state.rows.sort(comparator);
+
+        this.setState({rows});
+    }
+
+
+    getRows() {
+        return Data.Selectors.getRows(this.state);
+    }
+
+    rowGetter(rowIdx) {
+        const rows = this.getRows();
+        console.log(rows);
+        return rows[rowIdx];
+    }
+
+    handleGridRowsUpdated({fromRow, toRow, updated}) {
+        this.setState({
+            rows: this.state.rows.map(
+                (row, i) => {
+                    if (i < fromRow || i > toRow) return row;
+                    return {...row, ...updated};
+                }
+            )
+        });
+    }
+
+    render() {
+        return (
+          <div className="App">
+            <div className="App-table">
+              <ReactDataGrid
+                enableCellSelect={true}
+                columns={columns}
+                rowGetter={this.rowGetter}
+                rowsCount={this.state.rows.length}
+                onGridSort={this.handleGridSort}
+                onGridRowsUpdated={this.handleGridRowsUpdated}
+                minHeight={597 /* 35 */}
+              />
+            </div>
+          </div>
+            
+        );
+    }
 }
 
 export default App;
