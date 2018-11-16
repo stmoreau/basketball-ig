@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import Others from "./Others";
-import { players } from "./players";
+import { players } from "./helpers/players";
 
 const Main = () => {
   const player = returnPlayer(

@@ -120,7 +120,7 @@ const players = [{
     },
     {
         id: 13,
-        name: 'Jaime Díez',
+        name: 'Jaime Diez',
         email: 'Jaime.Diez@ig.com',
         title: 'Trading Services Trainee',
         interest: 'High',
