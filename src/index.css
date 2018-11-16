@@ -5,3 +5,19 @@ nav{
 nav img{
     height: 64px;
 }
+
+.arrow:hover {
+    text-decoration: underline;
+}
+
+.arrow:after {
+    content: '';
+    background: url('link.svg') no-repeat;
+    position: relative;
+    width: 9px;
+    height: 9px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-left: 5px;
+}

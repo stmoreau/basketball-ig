@@ -3279,6 +3279,10 @@ ignore@^3.3.3:
   version "3.3.10"
   resolved "http://bvrprdnex001.iggroup.local:8081/nexus/content/groups/npm-all/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
 
+immutable@^4.0.0-rc.12:
+  version "4.0.0-rc.12"
+  resolved "http://bvrprdnex001.iggroup.local:8081/nexus/content/groups/npm-all/immutable/-/immutable-4.0.0-rc.12.tgz#ca59a7e4c19ae8d9bf74a97bdf0f6e2f2a5d0217"
+
 import-lazy@^2.1.0:
   version "2.1.0"
   resolved "http://bvrprdnex001.iggroup.local:8081/nexus/content/groups/npm-all/import-lazy/-/import-lazy-2.1.0.tgz#05698e3d45c88e8d7e9d92cb0584e77f096f3e43"
@@ -5487,15 +5491,13 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-data-grid-addons@^4.0.8:
-  version "4.0.8"
-  resolved "http://bvrprdnex001.iggroup.local:8081/nexus/content/groups/npm-all/react-data-grid-addons/-/react-data-grid-addons-4.0.8.tgz#a2b2b8803942fab78edac5f65f4964f24024d11b"
-  dependencies:
-    react-data-grid "^4.0.8"
+react-data-grid-addons@^5.0.3:
+  version "5.0.4"
+  resolved "http://bvrprdnex001.iggroup.local:8081/nexus/content/groups/npm-all/react-data-grid-addons/-/react-data-grid-addons-5.0.4.tgz#2e07b891bbdb241cae7c9337554e1a59628a9978"
 
-react-data-grid@^4.0.8:
-  version "4.0.8"
-  resolved "http://bvrprdnex001.iggroup.local:8081/nexus/content/groups/npm-all/react-data-grid/-/react-data-grid-4.0.8.tgz#e67f73dde0d3c61bb38e41425603698ede442d18"
+react-data-grid@^5.0.3:
+  version "5.0.4"
+  resolved "http://bvrprdnex001.iggroup.local:8081/nexus/content/groups/npm-all/react-data-grid/-/react-data-grid-5.0.4.tgz#a242863b48a0829eed65ba8a5fc3e8a475dad3fe"
 
 react-dev-utils@^5.0.2:
   version "5.0.2"

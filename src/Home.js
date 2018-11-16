@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import ReactDataGrid from 'react-data-grid';
 import {Data} from 'react-data-grid-addons';
 import {players} from './players';
@@ -6,7 +7,7 @@ import {players} from './players';
 const columns = [
     {key: 'id', name: 'ID', width: 40},
     {key: 'name', name: 'Name'},
-    {key: 'accepted', name: 'Coming the 29th Nov'}
+    {key: 'accepted', name: 'Coming the 29th Nov'},
 ].map(
     column => ({
         ...column,
@@ -50,9 +51,14 @@ class App extends Component {
     }
 
     rowGetter(rowIdx) {
-        const rows = this.getRows();
-        console.log(rows);
-        return rows[rowIdx];
+        let rows = this.getRows();
+        let newRows = rows.map(row => {
+          if(typeof row.name === 'string' && row.name.includes('<Link') === false){
+            row.name = <Link className="arrow" to={`/${row.name.toLowerCase().replace(' ', '.')}`}>{row.name}</Link>;
+          }
+          return row;
+        })
+        return newRows[rowIdx];
     }
 
     handleGridRowsUpdated({fromRow, toRow, updated}) {
@@ -68,20 +74,15 @@ class App extends Component {
 
     render() {
         return (
-          <div className="App">
-            <div className="App-table">
-              <ReactDataGrid
-                enableCellSelect={true}
-                columns={columns}
-                rowGetter={this.rowGetter}
-                rowsCount={this.state.rows.length}
-                onGridSort={this.handleGridSort}
-                onGridRowsUpdated={this.handleGridRowsUpdated}
-                minHeight={597 /* 35 */}
-              />
-            </div>
-          </div>
-            
+          <ReactDataGrid
+            enableCellSelect={true}
+            columns={columns}
+            rowGetter={this.rowGetter}
+            rowsCount={this.state.rows.length}
+            onGridSort={this.handleGridSort}
+            onGridRowsUpdated={this.handleGridRowsUpdated}
+            minHeight={597 /* 35 */}
+          />
         );
     }
 }
