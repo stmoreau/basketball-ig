@@ -8,7 +8,7 @@ const players = [
     {id: 7, name: 'Feyi Obisesan', email: 'Feyi.Obisesan@ig.com', title: 'Associate QA Tester', interest: 'High', accepted: 'yes'},
     {id: 8, name: 'Thomas Rogers', email: 'Tom.Rogers@ig.com', title: 'Trading Services Trainee', interest: 'High', accepted: 'yes'},
     {id: 9, name: 'Periklis Korkontzelos', email: 'Periklis.Korkontzelos@ig.com', title: 'Associate Data Scientist', interest: 'High', accepted: 'yes'},
-    {id: 10, name: 'Jan Riccius', email: 'Jan.Riccius@ig.com', title: 'Trading Services Trainee', interest: 'High', accepted: 'no'},
+    {id: 10, name: 'Jan Riccius', email: 'Jan.Riccius@ig.com', title: 'Trading Services Trainee', interest: 'High', accepted: 'yes'},
     {id: 11, name: 'Alex Walker', email: 'Alex.Walker@ig.com', title: 'Business Analyst', interest: 'High', accepted: 'no'},
     {id: 12, name: 'Yohan Kariyawasan', email: 'Yohan.Kariyawasan@ig.com', title: 'Sales Trader', interest: 'High', accepted: 'no'},
     {id: 13, name: 'Jaime Díez', email: 'Jaime.Diez@ig.com', title: 'Trading Services Trainee', interest: 'High', accepted: 'no'},

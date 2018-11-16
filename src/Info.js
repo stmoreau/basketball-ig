@@ -1,18 +1,16 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import PlayerComponent from './PlayerComponent';
-import {players,urlNames} from './players';
+import {players, urlNames} from './players';
 
 
-function App({ match }) {
+function Info({ match }) {
   const player = returnPlayer(players, window.location.href.substr(window.location.href.lastIndexOf('/') + 1));
   return (
-    <div className="App">
-        <header className="App-header">
-            People's Availability
-        </header>
+    <div className="Info">
+        <h1>People's Info</h1>
         <ul>
-          {urlNames.map((data, i) => (<li key={i}><Link to={'/availability/' + data}>{players[i].name}</Link></li>))}
+          {urlNames.map((data, i) => (<li key={i}><Link to={'/info/' + data}>{players[i].name}</Link></li>))}
         </ul>
 
         <Route path={`${match.path}/:urlName`} render={() => <PlayerComponent ha="1" player={player} />} />
@@ -37,4 +35,4 @@ function returnPlayer(players, urlName){
   }
 }
 
-export default App;
+export default Info;

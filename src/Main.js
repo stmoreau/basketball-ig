@@ -1,13 +1,13 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
-import Availability from './Availability'
+import Info from './Info'
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/availability' component={Availability}/>
+      <Route path='/info' component={Info}/>
     </Switch>
   </main>
 )
