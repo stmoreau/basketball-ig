@@ -12,7 +12,7 @@ nav img{
 
 .arrow:after {
     content: '';
-    background: url('link.svg') no-repeat;
+    background: url('img/link.svg') no-repeat;
     position: relative;
     width: 9px;
     height: 9px;
@@ -28,7 +28,7 @@ nav img{
 
 .previous:before {
     content: '';
-    background: url('previous.svg') no-repeat;
+    background: url('img/previous.svg') no-repeat;
     position: relative;
     width: 9px;
     height: 9px;
