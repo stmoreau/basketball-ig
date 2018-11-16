@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export default function PlayerComponent({ player }) {
-    return (<h3>Player: {player.name}</h3>);
-}
+const PlayerComponent = ({...props}) => {
+    return(<h3>Player: {props.playerName}</h3>);
+};
+  
+  export default PlayerComponent;

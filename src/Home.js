@@ -54,7 +54,7 @@ class App extends Component {
         let rows = this.getRows();
         let newRows = rows.map(row => {
           if(typeof row.name === 'string' && row.name.includes('<Link') === false){
-            row.name = <Link className="arrow" to={`/${row.name.toLowerCase().replace(' ', '.')}`}>{row.name}</Link>;
+            row.name = <Link title={row.name} className="arrow" to={`/${row.name.toLowerCase().replace(' ', '.')}`}>{row.name}</Link>;
           }
           return row;
         })

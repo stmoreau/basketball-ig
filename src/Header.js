@@ -8,7 +8,6 @@ const Header = () => (
       <Link to='/' className="brand-logo left"><img style={{width: '70px'}} src={logo} alt="logo"/></Link>
       <ul className="right">
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/info'>People's info</Link></li>
       </ul>
     </div>
   </nav>

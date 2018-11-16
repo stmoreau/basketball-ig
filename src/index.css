@@ -21,3 +21,19 @@ nav img{
     display: inline-block;
     margin-left: 5px;
 }
+
+.previous:hover {
+    text-decoration: underline;
+}
+
+.previous:before {
+    content: '';
+    background: url('previous.svg') no-repeat;
+    position: relative;
+    width: 9px;
+    height: 9px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-right: 5px;
+}
