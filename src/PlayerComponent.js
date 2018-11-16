@@ -36,12 +36,12 @@ const PlayerComponent = ({ ...props }) => {
     <p key="p-title">Job Title: {props.title}</p>,
     <p key="p-interest">Level of Interest: {props.interest}</p>,
     <ul key="ul-days" className="collection with-header">
-      <li class="collection-header"><h5>Available Days:</h5></li>
-      {weekDays.map(day => (<li className="collection-item">{day} <span class="secondary-content">{(contains.call(props.days, day) ? <i class="check"/> : <i class="x"/>)}</span></li>))}
+      <li className="collection-header"><h5>Available Days:</h5></li>
+      {weekDays.map(day => (<li key={day} className="collection-item"><Link to={'days/'+day.toLowerCase()}>{day} <span className="secondary-content">{(contains.call(props.days, day) ? <i className="check"/> : <i className="x"/>)}</span></Link></li>))}
     </ul>,
-    <ul key="ul-days" className="collection with-header">
-      <li class="collection-header"><h5>Dates participated:</h5></li>
-      {props.datesParticipated.length ? props.datesParticipated.map(date => (<li className="collection-item">{date}</li>)) : <li className="collection-item">None yet</li>}
+    <ul key="ul-dates-played" className="collection with-header">
+      <li className="collection-header"><h5>Dates participated:</h5></li>
+      {props.datesParticipated.length ? props.datesParticipated.map(date => (<li key={date} className="collection-item">{date}</li>)) : <li className="collection-item">None yet</li>}
     </ul>
   ];
 };
