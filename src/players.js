@@ -4,6 +4,8 @@ const players = [{
         email: 'Stephane.Moreau@ig.com',
         title: 'Front End Developer',
         interest: 'High',
+        days: ['Monday', 'Wednesday', 'Thursday', 'Friday'],
+        datesParticipated: ['29th Nov'],
         accepted: 'yes'
     },
     {
@@ -12,6 +14,8 @@ const players = [{
         email: 'Erica.Perris@ig.com',
         title: 'Operational Risk Manager',
         interest: 'High',
+        days: ['Monday', 'Wednesday', 'Friday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -20,6 +24,8 @@ const players = [{
         email: 'Irene.Castaneda@ig.com',
         title: 'Off-page Search Manager, DailyFX',
         interest: 'High',
+        days: ['Tuesday', 'Wednesday', 'Thursday'],
+        datesParticipated: [],
         accepted: 'yes'
     },
     {
@@ -28,6 +34,8 @@ const players = [{
         email: 'Jerome.Johnson@ig.com',
         title: 'UK New Business Manager',
         interest: 'High',
+        days: ['Monday', 'Thursday', 'Friday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -36,6 +44,8 @@ const players = [{
         email: 'Nojan.Baseri@ig.com',
         title: 'Premium Account Executive',
         interest: 'High',
+        days: ['Monday', 'Wednesday', 'Thursday'],
+        datesParticipated: [],
         accepted: 'yes'
     },
     {
@@ -44,6 +54,8 @@ const players = [{
         email: 'Will.Hall-Smith@ig.com',
         title: 'Senior Copywriter',
         interest: 'High',
+        days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -52,6 +64,8 @@ const players = [{
         email: 'Feyi.Obisesan@ig.com',
         title: 'Associate QA Tester',
         interest: 'High',
+        days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+        datesParticipated: [],
         accepted: 'yes'
     },
     {
@@ -60,6 +74,8 @@ const players = [{
         email: 'Tom.Rogers@ig.com',
         title: 'Trading Services Trainee',
         interest: 'High',
+        days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        datesParticipated: [],
         accepted: 'yes'
     },
     {
@@ -68,6 +84,8 @@ const players = [{
         email: 'Periklis.Korkontzelos@ig.com',
         title: 'Associate Data Scientist',
         interest: 'High',
+        days: ['Monday', 'Tuesday', 'Thursday', 'Friday'],
+        datesParticipated: [],
         accepted: 'yes'
     },
     {
@@ -76,6 +94,8 @@ const players = [{
         email: 'Jan.Riccius@ig.com',
         title: 'Trading Services Trainee',
         interest: 'High',
+        days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        datesParticipated: [],
         accepted: 'yes'
     },
     {
@@ -84,6 +104,8 @@ const players = [{
         email: 'Alex.Walker@ig.com',
         title: 'Business Analyst',
         interest: 'High',
+        days: ['Monday', 'Tuesday', 'Wednesday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -92,6 +114,8 @@ const players = [{
         email: 'Yohan.Kariyawasan@ig.com',
         title: 'Sales Trader',
         interest: 'High',
+        days: ['Monday', 'Wednesday', 'Thursday', 'Friday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -100,6 +124,8 @@ const players = [{
         email: 'Jaime.Diez@ig.com',
         title: 'Trading Services Trainee',
         interest: 'High',
+        days: ['Monday', 'Tuesday', 'Thursday', 'Friday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -108,6 +134,8 @@ const players = [{
         email: 'eren.eraslan@ig.com',
         title: 'MTF Analyst',
         interest: 'Medium',
+        days: ['Wednesday', 'Thursday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -116,6 +144,8 @@ const players = [{
         email: 'Romans.Markuns@ig.com',
         title: 'Developer',
         interest: 'Medium',
+        days: ['Tuesday', 'Wednesday'],
+        datesParticipated: [],
         accepted: 'no'
     },
     {
@@ -124,10 +154,12 @@ const players = [{
         email: 'vivek.rughani@ig.com',
         title: 'Product Owner - Marketing Technology',
         interest: 'Medium',
+        days: ['Monday', 'Wednesday', 'Thursday'],
+        datesParticipated: [],
         accepted: 'no'
     }
 ];
 
 export {
     players
-};
+}; 
