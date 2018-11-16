@@ -11,7 +11,7 @@ const Day = ({...props}) => {
             {players.map(player => contains.call(player.days, day) ? 
                 typeof player.name === "string" ? (
                     <li className="collection-item">
-                        <Link className="arrow" to={'/'+String(player.name.toLocaleLowerCase().replace(' ', '.'))}>
+                        <Link className="arrow" to={process.env.PUBLIC_URL + '/'+String(player.name.toLocaleLowerCase().replace(' ', '.'))}>
                             {player.name}
                         </Link>
                     </li>

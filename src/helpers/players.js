@@ -4,7 +4,7 @@ const players = [{
         email: 'Stephane.Moreau@ig.com',
         title: 'Front End Developer',
         interest: 'High',
-        days: ['Monday', 'Wednesday', 'Thursday', 'Friday'],
+        days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         datesParticipated: ['29th Nov'],
         accepted: 'yes'
     },

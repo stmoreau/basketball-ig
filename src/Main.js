@@ -12,8 +12,8 @@ const Main = () => {
   return (
     <div className="container">
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path={"/:playerUrl"} render={() => <Others player={player} />} />
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={Home} />
+        <Route path={process.env.PUBLIC_URL+"/:playerUrl"} render={() => <Others player={player} />} />
       </Switch>
     </div>
   );

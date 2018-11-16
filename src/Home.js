@@ -61,7 +61,7 @@ class App extends Component {
           <Link
             title={row.name}
             className="arrow"
-            to={`/${row.name.toLowerCase().replace(" ", ".")}`}
+            to={`${process.env.PUBLIC_URL}/${row.name.toLowerCase().replace(" ", ".")}`}
           >
             {row.name}
           </Link>

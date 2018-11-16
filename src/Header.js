@@ -10,10 +10,10 @@ const Header = () => (
       </Link>
       <ul className="right">
         <li>
-          <Link to="/days">Days</Link>
+          <Link to={process.env.PUBLIC_URL + "/days"}>Days</Link>
         </li>
         <li>
-          <Link to="/">Home</Link>
+          <Link to={process.env.PUBLIC_URL + "/"}>Home</Link>
         </li>
       </ul>
     </div>

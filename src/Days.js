@@ -6,7 +6,7 @@ const Days = () => {
     return (
         <ul key="ul-days" className="collection with-header">
             <li className="collection-header"><h5>Days availability:</h5></li>
-            {weekDays.map(day => (<li key={day} className="collection-item"><Link to={'days/'+day.toLowerCase()}>{day}</Link></li>))}
+            {weekDays.map(day => (<li key={day} className="collection-item"><Link to={process.env.PUBLIC_URL + '/days/'+day.toLowerCase()}>{day}</Link></li>))}
         </ul>
     );
 };
