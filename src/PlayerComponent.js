@@ -11,7 +11,7 @@ const PlayerComponent = ({ ...props }) => {
     <p key="p-interest">Level of Interest: {props.interest}</p>,
     <ul key="ul-days" className="collection with-header">
       <li className="collection-header"><h5>Available Days:</h5></li>
-      {weekDays.map(day => (<li key={day} className="collection-item"><Link to={process.env.PUBLIC_URL+'days/'+day.toLowerCase()}>{day} <span className="secondary-content">{(contains.call(props.days, day) ? <i className="check"/> : <i className="x"/>)}</span></Link></li>))}
+      {weekDays.map(day => (<li key={day} className="collection-item"><Link to={process.env.PUBLIC_URL+'/days/'+day.toLowerCase()}>{day} <span className="secondary-content">{(contains.call(props.days, day) ? <i className="check"/> : <i className="x"/>)}</span></Link></li>))}
     </ul>,
     <ul key="ul-dates-played" className="collection with-header">
       <li className="collection-header"><h5>Dates participated:</h5></li>
