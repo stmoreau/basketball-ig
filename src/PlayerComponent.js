@@ -5,7 +5,7 @@ import {contains} from './helpers/utils';
 const PlayerComponent = ({ ...props }) => {
   const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   return [
-    <h3 key="heading-name">Player: {props.playerName}</h3>,
+    <h3 key="heading-name">{props.playerName}</h3>,
     <p key="p-email">Email: <a href={'mailto:'+props.email}>{props.email}</a></p>,
     <p key="p-title">Job Title: {props.title}</p>,
     <p key="p-interest">Level of Interest: {props.interest}</p>,
