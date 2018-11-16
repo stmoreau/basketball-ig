@@ -5,7 +5,7 @@ const players = [
     {id: 4, name: 'Jerome Johnson', email: 'Jerome.Johnson@ig.com', title: 'UK New Business Manager', interest: 'High', accepted: 'no'},
     {id: 5, name: 'Nojan Baseri', email: 'Nojan.Baseri@ig.com', title: 'Premium Account Executive', interest: 'High', accepted: 'yes'},
     {id: 6, name: 'Will Hall-Smith', email: 'Will.Hall-Smith@ig.com', title: 'Senior Copywriter', interest: 'High', accepted: 'no'},
-    {id: 7, name: 'Feyi Obisesan', email: 'Feyi.Obisesan@ig.com', title: 'Associate QA Tester', interest: 'High', accepted: 'no'},
+    {id: 7, name: 'Feyi Obisesan', email: 'Feyi.Obisesan@ig.com', title: 'Associate QA Tester', interest: 'High', accepted: 'yes'},
     {id: 8, name: 'Thomas Rogers', email: 'Tom.Rogers@ig.com', title: 'Trading Services Trainee', interest: 'High', accepted: 'yes'},
     {id: 9, name: 'Periklis Korkontzelos', email: 'Periklis.Korkontzelos@ig.com', title: 'Associate Data Scientist', interest: 'High', accepted: 'yes'},
     {id: 10, name: 'Jan Riccius', email: 'Jan.Riccius@ig.com', title: 'Trading Services Trainee', interest: 'High', accepted: 'no'},
@@ -17,6 +17,6 @@ const players = [
     {id: 16, name: 'Vivek Rughani', email: 'vivek.rughani@ig.com', title: 'Product Owner - Marketing Technology', interest: 'Medium', accepted: 'no'}
 ];
 
-const emails = players.map((player) => (player.email));
+const urlNames = players.map((player) => (player.email.toLowerCase().replace('@ig.com','')));
 
-export {players, emails};
+export {players, urlNames};
