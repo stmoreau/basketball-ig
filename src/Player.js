@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { contains } from "./helpers/utils";
+import { weekDays } from "./helpers/constants";
 
 const Player = ({ ...props }) => {
-  const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
   return [
     <h3 key="heading-name">{props.player.name}</h3>,
     <p key="p-email">
@@ -11,6 +11,9 @@ const Player = ({ ...props }) => {
     </p>,
     <p key="p-title">Job Title: {props.player.title}</p>,
     <p key="p-interest">Level of Interest: {props.player.interest}</p>,
+    <p key="p-times-played">
+      Times Played: {props.player.datesParticipated.length}
+    </p>,
     <ul key="ul-days" className="collection with-header">
       <li className="collection-header">
         <h5>Available Days:</h5>

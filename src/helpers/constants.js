@@ -160,6 +160,9 @@ const players = [{
     }
 ];
 
+const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
 export {
-    players
+    players,
+    weekDays
 };

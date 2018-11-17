@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./Home";
 import Days from "./Days";
 import Day from "./Day";
-import { players } from "./helpers/players";
+import { players } from "./helpers/constants";
 import Player from "./Player";
 
 const Main = () => {
@@ -11,26 +11,15 @@ const Main = () => {
     players,
     window.location.href.substr(window.location.href.lastIndexOf("/") + 1)
   );
-  const day = window.location.href.substr(
-    window.location.href.lastIndexOf("/") + 1
-  );
   return (
     <div className="container">
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+        <Route path={process.env.PUBLIC_URL + "/days/:day"} component={Day} />
+        <Route exact path={process.env.PUBLIC_URL + "/days"} component={Days} />
         <Route
-          exact
           path={process.env.PUBLIC_URL + "/players/:playerUrl"}
           render={() => <Player player={player} />}
-        />
-        <Route
-          exact
-          path={process.env.PUBLIC_URL + "/days/:day"}
-          render={props => <Day day={day} />}
-        />
-        <Route
-          path={process.env.PUBLIC_URL + "/days"}
-          render={() => <Days />}
         />
         <Redirect to={process.env.PUBLIC_URL + "/"} />
       </Switch>

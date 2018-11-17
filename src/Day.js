@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { contains } from "./helpers/utils";
-import { players } from "./helpers/players";
+import { players, weekDays } from "./helpers/constants";
+import FourOhFour from "./FourOhFour";
 
-const Day = ({ ...props }) => {
-  const day = props.day.replace(/^./, str => str.toUpperCase());
+const Day = props => {
+  const day = props.match.params.day.replace(/^./, str => str.toUpperCase());
+  if (!contains.call(weekDays, day)) {
+    return <FourOhFour />;
+  }
   return (
     <ul key="ul-days" className="collection with-header">
       <li className="collection-header">
@@ -12,21 +16,17 @@ const Day = ({ ...props }) => {
       </li>
       {players.map(player =>
         contains.call(player.days, day) ? (
-          typeof player.name === "string" ? (
-            <li className="collection-item">
-              <Link
-                to={
-                  process.env.PUBLIC_URL +
-                  "/players/" +
-                  String(player.name.toLocaleLowerCase().replace(" ", "."))
-                }
-              >
-                {player.name}
-              </Link>
-            </li>
-          ) : (
-            <li className="collection-item"> {player.name} </li>
-          )
+          <li key={player.id} className="collection-item">
+            <Link
+              to={
+                process.env.PUBLIC_URL +
+                "/players/" +
+                player.name.toLocaleLowerCase().replace(" ", ".")
+              }
+            >
+              {player.name}
+            </Link>
+          </li>
         ) : (
           ""
         )
