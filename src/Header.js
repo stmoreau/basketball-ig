@@ -19,7 +19,7 @@ const Header = () => (
           <Link to={process.env.PUBLIC_URL + "/days"}> Days </Link>
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + "/"}> Home </Link>
+          <Link to={process.env.PUBLIC_URL + "/"}> Players </Link>
         </li>
       </ul>
     </div>

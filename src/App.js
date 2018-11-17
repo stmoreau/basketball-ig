@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import Main from "./Main";
+import MainContent from "./MainContent";
 
-const App = () => [<Header key="header" />, <Main key="main" />];
+const App = () => [<Header key="header" />, <MainContent key="main-content" />];
 
 export default App;

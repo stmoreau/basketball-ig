@@ -4,7 +4,7 @@ import { players } from "./helpers/constants";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 
-class Table extends Component {
+class Players extends Component {
   constructor() {
     super();
     this.state = {
@@ -42,7 +42,17 @@ class Table extends Component {
             {
               Header: "Next Game (29th Nov)",
               id: "accepted",
-              accessor: d => (d.accepted ? "Coming" : "Not coming")
+              accessor: d =>
+                d.accepted ? (
+                  <span>
+                    Coming
+                    <span className="secondary-content">
+                      <i className="check" />
+                    </span>
+                  </span>
+                ) : (
+                  "Not coming"
+                )
             }
           ]}
           defaultPageSize={players.length}
@@ -54,4 +64,4 @@ class Table extends Component {
   }
 }
 
-export default Table;
+export default Players;

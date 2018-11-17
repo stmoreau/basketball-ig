@@ -24,6 +24,19 @@ const contains = function (needle) {
     return indexOf.call(this, needle) > -1;
 };
 
+const returnPlayer = (players, playerName) => {
+    try {
+        players.forEach(function (player) {
+            if (player.email.toLowerCase().includes(playerName)) {
+                throw player;
+            }
+        });
+    } catch (player) {
+        return player;
+    }
+}
+
 export {
-    contains
+    contains,
+    returnPlayer
 };

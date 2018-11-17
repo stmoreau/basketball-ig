@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { contains } from "./helpers/utils";
-import { weekDays } from "./helpers/constants";
+import { contains, returnPlayer } from "./helpers/utils";
+import { weekDays, players } from "./helpers/constants";
 
-const Player = ({ ...props }) => {
+const Player = props => {
+  const player = returnPlayer(players, props.match.params.player);
   return [
-    <h3 key="heading-name">{props.player.name}</h3>,
+    <h3 key="heading-name">{player.name}</h3>,
     <p key="p-email">
-      Email: <a href={"mailto:" + props.player.email}>{props.player.email}</a>
+      Email: <a href={"mailto:" + player.email}>{player.email}</a>
     </p>,
-    <p key="p-title">Job Title: {props.player.title}</p>,
-    <p key="p-interest">Level of Interest: {props.player.interest}</p>,
-    <p key="p-times-played">
-      Times Played: {props.player.datesParticipated.length}
-    </p>,
+    <p key="p-title">Job Title: {player.title}</p>,
+    <p key="p-interest">Level of Interest: {player.interest}</p>,
+    <p key="p-times-played">Times Played: {player.datesParticipated.length}</p>,
     <ul key="ul-days" className="collection with-header">
       <li className="collection-header">
         <h5>Available Days:</h5>
@@ -23,7 +22,7 @@ const Player = ({ ...props }) => {
           <Link to={process.env.PUBLIC_URL + "/days/" + day.toLowerCase()}>
             {day}
             <span className="secondary-content">
-              {contains.call(props.player.days, day) ? (
+              {contains.call(player.days, day) ? (
                 <i className="check" />
               ) : (
                 <i className="x" />
@@ -37,8 +36,8 @@ const Player = ({ ...props }) => {
       <li className="collection-header">
         <h5>Dates participated:</h5>
       </li>
-      {props.player.datesParticipated.length ? (
-        props.player.datesParticipated.map(date => (
+      {player.datesParticipated.length ? (
+        player.datesParticipated.map(date => (
           <li key={date} className="collection-item">
             {date}
           </li>
