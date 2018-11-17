@@ -6,22 +6,6 @@ nav img {
     height: 64px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.arrow:after {
-    content: '';
-    background: url('img/link.svg') no-repeat;
-    position: relative;
-    width: 9px;
-    height: 9px;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    margin-left: 5px;
-}
-
 .x:before {
     content: '';
     background: url('img/x-mark.svg') no-repeat;

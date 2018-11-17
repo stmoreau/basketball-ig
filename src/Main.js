@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./Home";
+import Table from "./Table";
 import Others from "./Others";
 import { players } from "./helpers/players";
 
@@ -12,9 +12,12 @@ const Main = () => {
   return (
     <div className="container">
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL+"/"} component={Home} />
-        <Route path={process.env.PUBLIC_URL+"/:playerUrl"} render={() => <Others player={player} />} />
-      </Switch>
+        <Route exact path={process.env.PUBLIC_URL + "/"} component={Table} />{" "}
+        <Route
+          path={process.env.PUBLIC_URL + "/:playerUrl"}
+          render={() => <Others player={player} />}
+        />
+      </Switch>{" "}
     </div>
   );
 };
