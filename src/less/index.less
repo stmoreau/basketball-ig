@@ -1,29 +1,35 @@
-nav {
-  margin-bottom: 10px;
-}
+body {
+  nav {
+    margin-bottom: 10px;
 
-nav img {
-  height: 64px;
-}
+    img {
+      height: 64px;
+    }
 
-.x:before {
-  content: "";
-  background: url("../img/x-mark.svg") no-repeat;
-  position: relative;
-  width: 17px;
-  height: 17px;
-  top: 0;
-  left: 0;
-  display: inline-block;
-}
+    li a.active {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
 
-.check:before {
-  content: "";
-  background: url("../img/checked.svg") no-repeat;
-  position: relative;
-  width: 17px;
-  height: 17px;
-  top: 0;
-  left: 0;
-  display: inline-block;
+  .x:before {
+    content: "";
+    background: url("../img/x-mark.svg") no-repeat;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+
+  .check:before {
+    content: "";
+    background: url("../img/checked.svg") no-repeat;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
 }

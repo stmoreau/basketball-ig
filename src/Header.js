@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "./img/logo.png";
 
 const Header = () => (
@@ -16,10 +16,14 @@ const Header = () => (
       </Link>
       <ul className="right">
         <li>
-          <Link to={process.env.PUBLIC_URL + "/days"}> Days </Link>
+          <NavLink strict to={process.env.PUBLIC_URL + "/days"}>
+            Days
+          </NavLink>
         </li>
         <li>
-          <Link to={process.env.PUBLIC_URL + "/"}> Players </Link>
+          <NavLink strict to={process.env.PUBLIC_URL + "/players"}>
+            Players
+          </NavLink>
         </li>
       </ul>
     </div>
