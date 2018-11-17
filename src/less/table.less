@@ -32,6 +32,10 @@ table {
     }
   }
 }
+.secondary-content {
+  float: right;
+  color: #26a69a;
+}
 @media only screen and (max-width: 992px) {
   table.responsive-table {
     width: 100%;
@@ -46,14 +50,12 @@ table {
         }
       }
       margin: 0;
-      vertical-align: top;
       display: block;
       min-height: 1.25em;
       text-align: left;
     }
     th {
       margin: 0;
-      vertical-align: top;
       text-align: left;
       display: block;
       text-align: right;
@@ -112,21 +114,6 @@ td {
   text-align: left;
   vertical-align: middle;
   border-radius: 2px;
-}
-table.striped {
-  tr {
-    border-bottom: none;
-  }
-  > tbody {
-    > tr {
-      &:nth-child(odd) {
-        background-color: rgba(242, 242, 242, 0.5);
-      }
-      > td {
-        border-radius: 0;
-      }
-    }
-  }
 }
 
 tr {
