@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { players } from "./helpers/players";
-
-// Import React Table
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 
@@ -40,27 +38,13 @@ class Table extends Component {
                     <Link
                       to={
                         process.env.PUBLIC_URL +
-                        "/" +
+                        "/players/" +
                         d.name.toLowerCase().replace(" ", ".")
                       }
                     >
                       {d.name}
                     </Link>
                   )
-                }
-              ]
-            },
-            {
-              Header: "Info",
-              columns: [
-                {
-                  Header: "Job Title",
-                  accessor: "title"
-                },
-                {
-                  Header: "Email",
-                  id: "email",
-                  accessor: d => <a href={"mailto:" + d.email}>{d.email}</a>
                 }
               ]
             },

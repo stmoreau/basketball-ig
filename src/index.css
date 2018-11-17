@@ -27,19 +27,3 @@ nav img {
     left: 0;
     display: inline-block;
 }
-
-.previous:hover {
-    text-decoration: underline;
-}
-
-.previous:before {
-    content: '';
-    background: url('img/previous.svg') no-repeat;
-    position: relative;
-    width: 9px;
-    height: 9px;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    margin-right: 5px;
-}

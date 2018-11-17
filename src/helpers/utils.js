@@ -1,7 +1,9 @@
 const contains = function (needle) {
+    // Per spec, the way to identify NaN is that it is not equal to itself
+    var findNaN = needle !== needle;
     var indexOf;
 
-    if (typeof Array.prototype.indexOf === 'function') {
+    if (!findNaN && typeof Array.prototype.indexOf === 'function') {
         indexOf = Array.prototype.indexOf;
     } else {
         indexOf = function (needle) {
@@ -11,7 +13,7 @@ const contains = function (needle) {
             for (i = 0; i < this.length; i++) {
                 var item = this[i];
 
-                if (item === needle) {
+                if ((findNaN && item !== item) || item === needle) {
                     index = i;
                     break;
                 }
