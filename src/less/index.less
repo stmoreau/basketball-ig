@@ -11,6 +11,46 @@ body {
     }
   }
 
+  table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+
+    th {
+      cursor: pointer;
+
+      i {
+        display: none;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        padding: 6px;
+        float: right;
+
+        &.asc {
+          display: block;
+          margin-top: 5px;
+          transform: rotate(-135deg);
+        }
+
+        &.des {
+          display: block;
+          margin-bottom: 5px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  }
+
   .x:before {
     content: "";
     background: url("../img/x-mark.svg") no-repeat;
