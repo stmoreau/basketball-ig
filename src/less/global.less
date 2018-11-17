@@ -1,0 +1,47 @@
+@font-face {
+  font-family: GlegooRegular;
+  src: url(../fonts/Glegoo-Regular.ttf);
+}
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+ul {
+  &:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+    > li {
+      list-style-type: none;
+    }
+  }
+}
+.x {
+  &:before {
+    content: "";
+    background: url("../img/x-mark.svg") no-repeat;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+}
+.check {
+  &:before {
+    content: "";
+    background: url("../img/checked.svg") no-repeat;
+    position: relative;
+    width: 17px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+}
+a {
+  color: #039be5;
+  text-decoration: none;
+}
