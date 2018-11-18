@@ -1,3 +1,3 @@
-# IG Basketball players
+# IG Basketball
 
-![screen](screen.png)
+![screen](screen.gif)
