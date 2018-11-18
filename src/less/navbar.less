@@ -1,0 +1,37 @@
+nav {
+  height: 64px;
+  line-height: 64px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 2px 0 @light-black;
+  background-color: @red;
+  width: 100%;
+
+  .container {
+    position: relative;
+    height: 100%;
+
+    img {
+      height: 64px;
+    }
+
+    ul {
+      margin: 0;
+
+      li {
+        float: left;
+
+        a {
+          transition: background-color 0.3s;
+          color: @white;
+          display: block;
+          padding: 0 15px;
+
+          &:hover,
+          &.active {
+            background-color: @light-black;
+          }
+        }
+      }
+    }
+  }
+}

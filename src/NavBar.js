@@ -2,17 +2,11 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "./img/logo.png";
 
-const Header = () => (
+const NavBar = () => (
   <nav>
-    <div className="nav-wrapper container">
-      <Link to={process.env.PUBLIC_URL + "/"} className="brand-logo left">
-        <img
-          style={{
-            width: "70px"
-          }}
-          src={logo}
-          alt="logo"
-        />
+    <div className="container">
+      <Link to={process.env.PUBLIC_URL + "/"} className="left">
+        <img src={logo} alt="logo" />
       </Link>
       <ul className="right">
         <li>
@@ -30,4 +24,4 @@ const Header = () => (
   </nav>
 );
 
-export default Header;
+export default NavBar;
