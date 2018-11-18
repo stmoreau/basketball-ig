@@ -21,7 +21,7 @@ const TableRow = ({ player, i }) => {
         {player.accepted ? (
           <span>
             Coming
-            <span className="secondary-content">
+            <span className="right">
               <i className="check" />
             </span>
           </span>

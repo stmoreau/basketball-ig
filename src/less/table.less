@@ -1,121 +1,48 @@
 table {
   width: 100%;
-  margin-bottom: 40px;
-  th {
-    cursor: pointer;
-    padding: 16px;
-    i {
-      display: none;
-      border: solid black;
-      border-width: 0 3px 3px 0;
-      padding: 6px;
-      float: right;
-    }
-    i.asc {
-      display: block;
-      margin-top: 5px;
-      transform: rotate(-135deg);
-    }
-    i.des {
-      display: block;
-      margin-bottom: 5px;
-      transform: rotate(45deg);
-    }
-  }
-  td {
-    text-align: left;
-    padding: 16px;
-  }
-  tbody tr {
-    &:hover {
-      background-color: #f2f2f2;
-    }
-  }
-}
-.secondary-content {
-  float: right;
-  color: #26a69a;
-}
-@media only screen and (max-width: 992px) {
-  table.responsive-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: block;
-    position: relative;
-    td {
-      &:empty {
-        &:before {
-          content: "\00a0";
-        }
-      }
-      margin: 0;
-      display: block;
-      min-height: 1.25em;
-      text-align: left;
-    }
-    th {
-      margin: 0;
-      text-align: left;
-      display: block;
-      text-align: right;
-    }
-    thead {
-      display: block;
-      float: left;
-      border: 0;
-      border-right: 1px solid rgba(0, 0, 0, 0.12);
-      tr {
-        display: block;
-        padding: 0 10px 0 0;
-        th {
-          &::before {
-            content: "\00a0";
-          }
-        }
-      }
-    }
-    tbody {
-      display: block;
-      width: auto;
-      position: relative;
-      overflow-x: auto;
-      white-space: nowrap;
-      tr {
-        display: inline-block;
-        vertical-align: top;
-      }
-    }
-    tr {
-      border-bottom: none;
-      padding: 0 10px;
-    }
-  }
-}
-table {
   border: none;
-  width: 100%;
   display: table;
   border-collapse: collapse;
-  border-spacing: 0;
-}
-th {
-  border: none;
-  padding: 15px 5px;
-  display: table-cell;
-  text-align: left;
-  vertical-align: middle;
-  border-radius: 2px;
-}
-td {
-  border: none;
-  padding: 15px 5px;
-  display: table-cell;
-  text-align: left;
-  vertical-align: middle;
-  border-radius: 2px;
-}
 
-tr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  thead tr {
+    border-bottom: 1px solid @light-black;
+
+    th {
+      cursor: pointer;
+      padding: 16px;
+      text-align: left;
+
+      i {
+        display: none;
+        border: solid @black;
+        border-width: 0 3px 3px 0;
+        padding: 6px;
+        float: right;
+
+        &.asc {
+          display: block;
+          margin-top: 5px;
+          transform: rotate(-135deg);
+        }
+
+        &.des {
+          display: block;
+          margin-bottom: 5px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  tbody tr {
+    border-bottom: 1px solid @light-black;
+
+    td {
+      padding: 16px;
+    }
+
+    &:hover {
+      background-color: @gray;
+    }
+  }
 }

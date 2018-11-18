@@ -56,7 +56,7 @@ const Players = () => {
   }
 
   return (
-    <table id="playersTable">
+    <table>
       <thead>
         <tr>
           {columns.map((column, i) => (

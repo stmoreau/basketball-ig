@@ -21,7 +21,7 @@ const Player = props => {
         <li key={day} className="collection-item">
           <Link to={process.env.PUBLIC_URL + "/days/" + day.toLowerCase()}>
             {day}
-            <span className="secondary-content">
+            <span className="right">
               {contains.call(player.days, day) ? (
                 <i className="check" />
               ) : (
