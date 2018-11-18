@@ -59,12 +59,12 @@ const Players = () => {
     <table>
       <thead>
         <tr>
-          {columns.map((column, i) => (
+          {Object.keys(columns).map(key => (
             <TableHeader
-              key={column.id}
-              direction={directions[column.id]}
-              handleClick={() => sort(column.id, directions[column.id])}
-              column={column}
+              key={columns[key]}
+              name={columns[key]}
+              direction={directions[key]}
+              handleClick={() => sort(key, directions[key])}
             />
           ))}
         </tr>
@@ -77,5 +77,14 @@ const Players = () => {
     </table>
   );
 };
+
+// column => (
+//             <TableHeader
+//               key={column.id}
+//               direction={directions[column.id]}
+//               handleClick={() => sort(column.id, directions[column.id])}
+//               column={column}
+//             />
+//           ))}
 
 export default Players;
