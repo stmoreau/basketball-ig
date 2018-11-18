@@ -1,9 +1,9 @@
 import React from "react";
 
-const TableHeader = ({ column, handleClick, direction }) => {
+const TableHeader = ({ name, handleClick, direction }) => {
   return (
     <th onClick={handleClick}>
-      {column.header}
+      {name}
       <i className={direction} />
     </th>
   );

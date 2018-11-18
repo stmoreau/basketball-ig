@@ -162,19 +162,11 @@ const players = [{
 
 const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
-const columns = [{
-    header: "Id",
-    id: "id"
-  },
-  {
-    header: "First Name",
-    id: "name"
-  },
-  {
-    header: "Next Game (29th Nov)",
-    id: "accepted"
-  }
-]
+const columns = {
+  id: "Id",
+  name: "Full Name",
+  accepted: "Next Game (29th Nov)"
+};
 
 export {
   players,
