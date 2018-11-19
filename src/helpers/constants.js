@@ -151,12 +151,22 @@ const players = [{
   {
     id: 15,
     name: "Vivek Rughani",
-    email: "vivek.rughani@ig.com",
+    email: "Vivek.Rughani@ig.com",
     title: "Product Owner - Marketing Technology",
     interest: "Medium",
     days: ["Monday", "Wednesday", "Thursday"],
     datesParticipated: [],
     accepted: false
+  },
+  {
+    id: 16,
+    name: "Moritz Gersdorff",
+    email: "Moritz.Gersdorff@ig.com",
+    title: "Head of Localisation",
+    interest: "High",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    datesParticipated: [],
+    accepted: true
   }
 ];
 
