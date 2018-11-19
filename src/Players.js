@@ -32,10 +32,12 @@ const Players = () => {
   }
 
   function handleSetPlayersHelper(sortKey, a, b) {
-    if (typeof a[sortKey] === "string") {
-      return String(b[sortKey]).localeCompare(String(a[sortKey]));
-    } else {
+    if (typeof a[sortKey] === "number") {
       return b[sortKey] - a[sortKey];
+    } else if(typeof a[sortKey] === "string") {
+      return b[sortKey].localeCompare(a[sortKey]);
+    } else {
+      return a[sortKey] - b[sortKey];
     }
   }
 
