@@ -167,6 +167,16 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true
+  },
+  {
+    id: 17,
+    name: "Akinola Akinyemi",
+    email: "akinola.akinyemi@ig.com",
+    title: "Data Science Team Lead",
+    interest: "High",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    datesParticipated: [],
+    accepted: true
   }
 ];
 
