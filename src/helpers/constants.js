@@ -36,7 +36,7 @@ const players = [{
     interest: "High",
     days: ["Monday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: false
+    accepted: true
   },
   {
     id: 4,
