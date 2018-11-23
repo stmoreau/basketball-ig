@@ -177,6 +177,26 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true
+  },
+  {
+    id: 18,
+    name: "Andreas Colligan",
+    email: "Andreas.Colligan@ig.com",
+    title: "Dealer",
+    interest: "High",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    datesParticipated: [],
+    accepted: true
+  },
+  {
+    id: 19,
+    name: "Kin Suen",
+    email: "kin.suen@ig.com",
+    title: "Senior Sales Trader (UK)",
+    interest: "High",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+    datesParticipated: [],
+    accepted: true
   }
 ];
 
