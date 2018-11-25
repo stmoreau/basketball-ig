@@ -6,8 +6,6 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import "./less/index.less";
 
-const isProduction = process.env.NODE_ENV === 'production';
-
 render(
   <BrowserRouter>
     <App />

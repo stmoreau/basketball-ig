@@ -80,13 +80,4 @@ const Players = () => {
   );
 };
 
-// column => (
-//             <TableHeader
-//               key={column.id}
-//               direction={directions[column.id]}
-//               handleClick={() => sort(column.id, directions[column.id])}
-//               column={column}
-//             />
-//           ))}
-
 export default Players;

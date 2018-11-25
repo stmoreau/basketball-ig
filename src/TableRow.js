@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const TableRow = ({ player, i }) => {
+const TableRow = ({ player }) => {
   return (
     <tr>
-      <td>{player.id}</td>
+      <td>{player.id + 1}</td>
       <td>
         <Link
           to={
