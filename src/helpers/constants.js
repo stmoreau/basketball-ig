@@ -6,7 +6,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 1,
@@ -16,7 +17,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Wednesday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 2,
@@ -26,7 +28,8 @@ const players = [{
     interest: "High",
     days: ["Tuesday", "Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: true
   },
   {
     id: 3,
@@ -36,7 +39,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 4,
@@ -46,7 +50,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 5,
@@ -56,7 +61,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: false
+    accepted: true,
+    payed: false
   },
   {
     id: 6,
@@ -66,7 +72,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 7,
@@ -76,7 +83,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 8,
@@ -86,7 +94,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 9,
@@ -96,7 +105,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 10,
@@ -106,7 +116,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday"],
     datesParticipated: [],
-    accepted: false
+    accepted: true,
+    payed: false
   },
   {
     id: 11,
@@ -116,7 +127,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 12,
@@ -126,7 +138,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: true
   },
   {
     id: 13,
@@ -136,7 +149,8 @@ const players = [{
     interest: "Medium",
     days: ["Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: false
+    accepted: true,
+    payed: false
   },
   {
     id: 14,
@@ -146,7 +160,8 @@ const players = [{
     interest: "Medium",
     days: ["Tuesday", "Wednesday"],
     datesParticipated: [],
-    accepted: false
+    accepted: true,
+    payed: false
   },
   {
     id: 15,
@@ -156,7 +171,8 @@ const players = [{
     interest: "Medium",
     days: ["Monday", "Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: false
+    accepted: true,
+    payed: false
   },
   {
     id: 16,
@@ -166,7 +182,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 17,
@@ -176,7 +193,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 18,
@@ -186,7 +204,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   },
   {
     id: 19,
@@ -196,7 +215,8 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: true
+    accepted: true,
+    payed: false
   }
 ];
 
@@ -205,7 +225,8 @@ const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 const columns = {
   id: "Id",
   name: "Full Name",
-  accepted: "Next Game (29th Nov)"
+  accepted: "Next Game (29th Nov)",
+  payed: "Payed"
 };
 
 export {

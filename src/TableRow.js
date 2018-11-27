@@ -29,6 +29,19 @@ const TableRow = ({ player }) => {
           "Not coming"
         )}
       </td>
+
+      <td>
+        {player.payed ? (
+          <span>
+            Yes
+            <span className="right">
+              <i className="check" />
+            </span>
+          </span>
+        ) : (
+          "No"
+        )}
+      </td>
     </tr>
   );
 };

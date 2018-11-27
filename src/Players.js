@@ -8,7 +8,8 @@ const Players = () => {
   const [directions, setDirections] = useState({
     id: "",
     name: "",
-    accepted: ""
+    accepted: "",
+    payed: ""
   });
 
   function sort(sortKey, dir) {
