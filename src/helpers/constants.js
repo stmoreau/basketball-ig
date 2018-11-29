@@ -5,7 +5,7 @@ const players = [{
     title: "Front End Developer",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   },
@@ -16,7 +16,7 @@ const players = [{
     title: "Operational Risk Manager",
     interest: "High",
     days: ["Monday", "Wednesday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   },
@@ -27,7 +27,7 @@ const players = [{
     title: "Off-page Search Manager, DailyFX",
     interest: "High",
     days: ["Tuesday", "Wednesday", "Thursday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   },
@@ -38,9 +38,9 @@ const players = [{
     title: "UK New Business Manager",
     interest: "High",
     days: ["Monday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
-    paid: false
+    paid: true
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const players = [{
     title: "Premium Account Executive",
     interest: "High",
     days: ["Monday", "Wednesday", "Thursday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: false
   },
@@ -60,8 +60,8 @@ const players = [{
     title: "Senior Copywriter",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
-    accepted: false,
+    datesParticipated: ['29/11/2018'],
+    accepted: true,
     paid: false
   },
   {
@@ -71,7 +71,7 @@ const players = [{
     title: "Associate QA Tester",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   },
@@ -82,7 +82,7 @@ const players = [{
     title: "Trading Services Trainee",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   },
@@ -93,7 +93,7 @@ const players = [{
     title: "Associate Data Scientist",
     interest: "High",
     days: ["Monday", "Tuesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: false
   },
@@ -104,7 +104,7 @@ const players = [{
     title: "Trading Services Trainee",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: false
   },
@@ -126,7 +126,7 @@ const players = [{
     title: "Sales Trader",
     interest: "High",
     days: ["Monday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: false
   },
@@ -137,7 +137,7 @@ const players = [{
     title: "Trading Services Trainee",
     interest: "High",
     days: ["Monday", "Tuesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   },
@@ -181,7 +181,7 @@ const players = [{
     title: "Head of Localisation",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   },
@@ -192,9 +192,9 @@ const players = [{
     title: "Data Science Team Lead",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
-    paid: false
+    paid: true
   },
   {
     id: 18,
@@ -203,7 +203,7 @@ const players = [{
     title: "Dealer",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: false
   },
@@ -214,7 +214,7 @@ const players = [{
     title: "Senior Sales Trader (UK)",
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-    datesParticipated: [],
+    datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
   }
