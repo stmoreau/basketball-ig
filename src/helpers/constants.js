@@ -61,7 +61,7 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
-    accepted: true,
+    accepted: false,
     payed: false
   },
   {
@@ -116,7 +116,7 @@ const players = [{
     interest: "High",
     days: ["Monday", "Tuesday", "Wednesday"],
     datesParticipated: [],
-    accepted: true,
+    accepted: false,
     payed: false
   },
   {
@@ -149,7 +149,7 @@ const players = [{
     interest: "Medium",
     days: ["Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: true,
+    accepted: false,
     payed: false
   },
   {
@@ -160,7 +160,7 @@ const players = [{
     interest: "Medium",
     days: ["Tuesday", "Wednesday"],
     datesParticipated: [],
-    accepted: true,
+    accepted: false,
     payed: false
   },
   {
@@ -171,7 +171,7 @@ const players = [{
     interest: "Medium",
     days: ["Monday", "Wednesday", "Thursday"],
     datesParticipated: [],
-    accepted: true,
+    accepted: false,
     payed: false
   },
   {
