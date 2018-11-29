@@ -7,7 +7,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: true
+    paid: true
   },
   {
     id: 1,
@@ -18,7 +18,7 @@ const players = [{
     days: ["Monday", "Wednesday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: true
+    paid: true
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const players = [{
     days: ["Tuesday", "Wednesday", "Thursday"],
     datesParticipated: [],
     accepted: true,
-    payed: true
+    paid: true
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const players = [{
     days: ["Monday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: false
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const players = [{
     days: ["Monday", "Wednesday", "Thursday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: false
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: false,
-    payed: false
+    paid: false
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: true
   },
   {
     id: 7,
@@ -84,7 +84,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: true
+    paid: true
   },
   {
     id: 8,
@@ -95,7 +95,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: false
   },
   {
     id: 9,
@@ -106,7 +106,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: false
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday"],
     datesParticipated: [],
     accepted: false,
-    payed: false
+    paid: false
   },
   {
     id: 11,
@@ -128,7 +128,7 @@ const players = [{
     days: ["Monday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: false
   },
   {
     id: 12,
@@ -139,7 +139,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: true
+    paid: true
   },
   {
     id: 13,
@@ -150,7 +150,7 @@ const players = [{
     days: ["Wednesday", "Thursday"],
     datesParticipated: [],
     accepted: false,
-    payed: false
+    paid: false
   },
   {
     id: 14,
@@ -161,7 +161,7 @@ const players = [{
     days: ["Tuesday", "Wednesday"],
     datesParticipated: [],
     accepted: false,
-    payed: false
+    paid: false
   },
   {
     id: 15,
@@ -172,7 +172,7 @@ const players = [{
     days: ["Monday", "Wednesday", "Thursday"],
     datesParticipated: [],
     accepted: false,
-    payed: false
+    paid: false
   },
   {
     id: 16,
@@ -183,7 +183,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: true
+    paid: true
   },
   {
     id: 17,
@@ -194,7 +194,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: false
   },
   {
     id: 18,
@@ -205,7 +205,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: [],
     accepted: true,
-    payed: false
+    paid: false
   },
   {
     id: 19,
@@ -216,7 +216,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
     datesParticipated: [],
     accepted: true,
-    payed: true
+    paid: true
   }
 ];
 
@@ -226,7 +226,7 @@ const columns = {
   id: "Id",
   name: "Full Name",
   accepted: "Next Game (29th Nov)",
-  payed: "Payed"
+  paid: "Paid"
 };
 
 export {

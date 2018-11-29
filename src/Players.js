@@ -9,7 +9,7 @@ const Players = () => {
     id: "",
     name: "",
     accepted: "",
-    payed: ""
+    paid: ""
   });
 
   function sort(sortKey, dir) {

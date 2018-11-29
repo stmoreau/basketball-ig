@@ -31,7 +31,7 @@ const TableRow = ({ player }) => {
       </td>
 
       <td>
-        {player.payed ? (
+        {player.paid ? (
           <span>
             Yes
             <span className="right">
