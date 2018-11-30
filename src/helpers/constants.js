@@ -217,6 +217,17 @@ const players = [{
     datesParticipated: ['29/11/2018'],
     accepted: true,
     paid: true
+  },
+  {
+    id: 20,
+    name: "Elyes Saafi",
+    email: "elyes.saafi@ig.com",
+    title: "Marketing Partnership Manager",
+    interest: "High",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    datesParticipated: [],
+    accepted: false,
+    paid: false
   }
 ];
 
