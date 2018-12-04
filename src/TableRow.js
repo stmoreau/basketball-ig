@@ -17,7 +17,7 @@ const TableRow = ({ player }) => {
         </Link>
       </td>
 
-      <td>
+      {/* <td>
         {player.accepted ? (
           <span>
             Coming
@@ -28,9 +28,9 @@ const TableRow = ({ player }) => {
         ) : (
           "Not coming"
         )}
-      </td>
+      </td> */}
 
-      <td>
+      {/* <td>
         {player.paid ? (
           <span>
             Yes
@@ -41,7 +41,7 @@ const TableRow = ({ player }) => {
         ) : (
           "No"
         )}
-      </td>
+      </td> */}
     </tr>
   );
 };

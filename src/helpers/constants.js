@@ -247,8 +247,8 @@ const weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 const columns = {
   id: "Id",
   name: "Full Name",
-  accepted: "Next Game (29th Nov)",
-  paid: "Paid"
+  // accepted: "Next Game (29th Nov)",
+  // paid: "Paid"
 };
 
 export {
