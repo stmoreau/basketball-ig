@@ -106,7 +106,7 @@ const players = [{
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: ['29/11/2018'],
     accepted: true,
-    paid: false
+    paid: true
   },
   {
     id: 10,
@@ -128,7 +128,7 @@ const players = [{
     days: ["Monday", "Wednesday", "Thursday", "Friday"],
     datesParticipated: ['29/11/2018'],
     accepted: true,
-    paid: false
+    paid: true
   },
   {
     id: 12,
