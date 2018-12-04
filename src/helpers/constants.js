@@ -51,7 +51,7 @@ const players = [{
     days: ["Monday", "Wednesday", "Thursday"],
     datesParticipated: ['29/11/2018'],
     accepted: true,
-    paid: false
+    paid: true
   },
   {
     id: 5,
