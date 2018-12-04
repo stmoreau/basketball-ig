@@ -228,6 +228,17 @@ const players = [{
     datesParticipated: [],
     accepted: false,
     paid: false
+  },
+  {
+    id: 21,
+    name: "Sonia Mazzotta",
+    email: "Sonia.Mazzotta@ig.com",
+    title: "Off-page Search Team Lead",
+    interest: "High",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+    datesParticipated: [],
+    accepted: false,
+    paid: false
   }
 ];
 
